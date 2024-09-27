@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxtjs/tailwindcss": "latest",
     "flowbite": "^2.5.1",
+    "googleapis": "105",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"
