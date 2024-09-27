@@ -34,14 +34,14 @@ export default defineEventHandler(async (event) => {
       event.res.statusCode = 400;
       return { statusCode: 400, body: { message: "Email already exists" } };
     }
-
+const currentDate = new Date().toLocaleDateString('en-IN');
     // If email doesn't exist, proceed with adding the new entry
     const addRes = await sheets.spreadsheets.values.append({
       spreadsheetId,
       range: "Sheet1!A:A",
       valueInputOption: "USER_ENTERED",
       resource: {
-        values: [[name, email, phone, state, district]],
+        values: [[name, email, phone, state, district,`${currentDate}`]],
       },
     });
 

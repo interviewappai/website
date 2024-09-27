@@ -10,10 +10,10 @@ onMounted(() => {
 <template>
   <div class="relative">
     <div class="fixed bottom-5 right-5 w-16 h-16 z-10">
-      <a src="https://api.whatsapp.com/send?phone=+911234567890" class="cursor-pointer">
+      <NuxtLink to="https://wa.me/+918888888888?text=I would like to join python course">
         <img src="https://cdn.icon-icons.com/icons2/840/PNG/512/Whatsapp_icon-icons.com_66931.png" alt="whatsapp"
-          class="w-16 h-16" />
-      </a>
+          class="w-16 h-16 block" />
+      </NuxtLink>
     </div>
     <HomeHero />
     <HomeCourses />
