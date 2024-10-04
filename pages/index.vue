@@ -15,10 +15,10 @@ onMounted(() => {
           class="w-16 h-16 block" />
       </NuxtLink>
     </div>
-    <HomeHero />
-    <HomeCourses />
-    <HomeEnroll />
-    <HomeFooter />
+    <HomeHero class="mt-20 md:mt-10" />
+    <HomeCourses class="mt-20" />
+    <HomeEnroll class="mt-20" />
+    <HomeFooter class="mt-20" />
   </div>
 </template>
 

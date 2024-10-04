@@ -704,7 +704,7 @@
             <h1
               class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white leading-relaxed">
               <span
-                class="bg-clip-text text-transparent bg-gradient-to-r  md:text-5xl lg:text-6xl from-yellow-500 via-orange-500 to-blue-500 logo text-3xl ">Level
+                class="bg-clip-text text-transparent bg-gradient-to-r  md:text-5xl lg:text-6xl from-red-500 via-pink-500 to-blue-500 logo text-3xl ">Level
                 Up</span> your portfolio with our project-driven hands-on courses
             </h1>
             <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
@@ -743,7 +743,10 @@
 </template>
 
 
-<style>
+<style scoped>
+.logo {
+    animation: Gradient 3s ease infinite;
+}
 svg#freepik_stories-digital-transformation:not(.animated) .animable {
   opacity: 0;
 }
