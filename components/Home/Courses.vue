@@ -4,7 +4,8 @@ const Data = [
   {
     title: "Python Basics & Advanced To-Do List",
     week: "Week 1",
-    description: "Explore Python fundamentals while building a feature-rich to-do list application. Learn control flow, functions, and data structures as you create a priority-based task manager with a graphical user",
+    description:
+      "Explore Python fundamentals while building a feature-rich to-do list application. Learn control flow, functions, and data structures as you create a priority-based task manager with a graphical user",
     features: [
       "Priority-based task management",
       "Task editing and deletion",
@@ -65,16 +66,28 @@ const Data = [
   <div>
     <section class="bg-white dark:bg-gray-900" id="courses">
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+        <div class="mx-auto max-w-screen-lg text-center mb-8 lg:mb-12">
+          <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             What we offer
           </h2>
-          <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Dive into Python programming with our hands-on, project-driven course.           </p>
+          <div>
+            <img class="w-40 h-40 mx-auto" src="https://cdn.icon-icons.com/icons2/112/PNG/512/python_18894.png"
+              alt="logo" />
+          </div>
+          <h1
+            class="mb-4 text-4xl font-extrabold  tracking-tight leading-none text-gray-900  dark:text-white">
+            Master Python Through Real-World Projects
+          </h1>
+          <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+            Dive into Python programming with our hands-on, project-driven
+            course. Build practical applications while learning essential
+            concepts, from basics to advanced techniques. Unleash your coding
+            potential and create impactful software solutions.
+          </p>
         </div>
         <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <!-- Pricing Card -->
-          <Card v-for="item,index in Data" :title="item.title" :week="item.week" :description="item.description"
+          <Card v-for="(item, index) in Data" :title="item.title" :week="item.week" :description="item.description"
             :features="item.features" :key="item.index" />
         </div>
       </div>
